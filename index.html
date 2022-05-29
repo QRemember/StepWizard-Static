@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from jthemes.net/themes/html/wizard-form/v1/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 May 2022 04:11:53 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>Wizard V1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/image-uploader.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
+	<!-- Color Alternatives -->
+	<link href="assets/css/colors/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
+	<link href="assets/css/colors/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
+	<link href="assets/css/colors/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
+	<link href="assets/css/colors/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
+</head>
+
+<body>
+
+
+	<div class="clearfix"></div>
+
+	
+	<div class="wrapper">
+		<div class="steps-area steps-area-fixed">
+			<div class="image-holder">
+				<img src="assets/img/mem.jpeg" alt="">
+			</div>
+			<div class="steps clearfix">
+				<ul class="tablist multisteps-form__progress">
+					<li class="multisteps-form__progress-btn js-active current">
+						<span>1</span>
+					</li>
+					<li class="multisteps-form__progress-btn">
+						<span>2</span>
+					</li>
+					<li class="multisteps-form__progress-btn last">
+						<span>3</span>
+					</li>
+	
+				</ul>
+			</div>
+		</div>
+		<form class="multisteps-form__form" action="#" id="wizard" method="POST">
+			<div class="form-area position-relative">
+				<!-- div 1 -->
+				<div class="multisteps-form__panel js-active" data-animation="slideHorz">
+					<div class="wizard-forms">
+						<div class="inner pb-100 clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no">Step 1</span>
+									<div class="step-progress float-right">
+										<span>1 of 3 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar" style="width:33%"></div>
+											</div>
+										</div>
+									</div>
+
+									<h2>Your Personal Details</h2>
+									<div class="step-box" style="    padding-top: 30px;">
+										<div class="form-inner-area">
+											<input type="text" name="full_name" class="form-control required" minlength="2" placeholder="First and last name *" required>
+											<input type="email" name="email" class="form-control required" placeholder="Email Address *" required>
+											<input type="text" name="phone" placeholder="Phone">
+										</div>
+										<div class="row conditional" data-condition="#condition1 && service_name == 'Freelancing Services'">
+											<div class="col-md-12 form-inner-area">
+												<label for="field"><h3>Which Sector</h3></label>
+												<input type="text" name="field" class="form-control" minlength="2" placeholder="Write Here">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.inner -->
+						<div class="actions">
+							<ul>
+								<li class="disable" aria-disabled="true"><span class="js-btn-next" title="NEXT">Backward <i class="fa fa-arrow-right"></i></span></li>
+								<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- div 2 -->
+				<div class="multisteps-form__panel">
+					<div class="wizard-forms">
+						<div class="inner clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no bottom-line">Step 2</span>
+									<div class="step-progress float-right">
+										<span>2 of 3 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar" style="width: 66%"></div>
+											</div>
+										</div>
+									</div>
+
+									<h2>Upload Photos</h2>
+								
+							
+							
+									
+								</div>
+							</div>
+						</div>
+						<!-- /.inner -->
+						
+					</div>
+					<div class="asd">
+
+
+
+				
+				
+						<form method="POST" name="form-example-2" id="form-example-2" enctype="multipart/form-data">
+			
+					
+							<div class="input-field">
+								
+								<div class="input-images-2" style="padding-top: .5rem;"></div>
+							</div>
+				
+						
+				
+						</form>
+				
+					 
+					</div>
+					<div class="actions">
+						<ul>
+							<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK </span></li>
+							<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- div 3 -->
+				<div class="multisteps-form__panel" data-animation="slideHorz">
+					<div class="wizard-forms">
+						<div class="inner pb-100 clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no bottom-line">Step 3</span>
+									<div class="step-progress float-right">
+										<span>3 of 3 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar" style="width:100%"></div>
+											</div>
+										</div>
+									</div>
+								
+									<h2 class="thanks-screen">	<img src="assets/img/env.PNG">Thanks For Submitting!</h2><p class="text-center mt-0">Your memories has been shared!</p>
+							
+								
+								
+								
+								</div>
+							</div>
+						</div>
+						<!-- ./inner -->
+						<div class="actions">
+							<ul>
+								<li class="d-none"><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK </span></li>
+								<li><span class="js-btn-next" title="NEXT">GO HOME <i class="fa fa-arrow-right"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- div 4 -->
+				<div class="multisteps-form__panel" data-animation="slideHorz">
+					<div class="wizard-forms">
+						<div class="inner pb-100 clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no bottom-line">Step 4</span>
+									<div class="step-progress float-right">
+										<span>4 of 5 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar" style="width:70%"></div>
+											</div>
+										</div>
+									</div>
+									<h2>What kind of services You Need</h2>
+									<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+									<div class="step-content-area">
+										<div class="budget-area">
+											<p><i class="fas fa-dollar-sign"></i> Budget</p>
+											<select name="budget">
+												<option>$390 - $600</option>
+												<option>$390 - $600</option>
+												<option>$390 - $600</option>
+												<option>$390 - $600</option>
+												<option>$390 - $600</option>
+											</select>
+										</div>
+										<div class="budget-area">
+											<p><i class="fas fa-comments"></i> Required Support</p>
+											<select name="support_period">
+												<option>2 to 6 month</option>
+												<option>2 to 6 month</option>
+												<option>2 to 6 month</option>
+												<option>2 to 6 month</option>
+												<option>2 to 6 month</option>
+											</select>
+										</div>
+										<div class="budget-area">
+											<p>Optimization and Accessibility</p>
+											<div class="opti-list">
+												<ul class="d-flex">
+													<li class="bg-white active"><input type="checkbox" name="code_opti1" value="Semantic coding" checked>Semantic coding</li>
+													<li class="bg-white"><input type="checkbox" name="code_opti2" value="Mobile APP">Mobile APP</li>
+													<li class="bg-white"><input type="checkbox" name="code_opti3" value="Mobile Design">Mobile Design</li>
+												</ul>
+											</div>
+										</div>
+										<div class="comment-box">
+											<p><i class="fas fa-comments"></i> Write Somthing note</p>
+											<textarea name="comments-note" placeholder="Your Content Here"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.inner -->
+						<div class="actions">
+							<ul>
+								<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK </span></li>
+								<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- div 5 -->
+				<div class="multisteps-form__panel" data-animation="slideHorz">
+					<div class="wizard-forms">
+						<div class="inner pb-100 clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no bottom-line">Step 5</span>
+									<div class="step-progress float-right">
+										<span>5 of 5 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar" style="width:100%"></div>
+											</div>
+										</div>
+									</div>
+									<h2>Complete Final Step</h2>
+									<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+									<div class="step-content-field">
+										<div class="date-picker date datepicker">
+											<input type="text" name="date" class="form-control">
+											<div class="input-group-append"><span>ADD TIME</span></div>
+										</div>
+										<div class="plan-area">
+											<div class="plan-icon-text text-center active">
+												<div class="plan-icon">
+													<i class="fas fa-chess-queen"></i>
+												</div>
+												<div class="plan-text">
+													<h3>Unlimited Plan</h3>
+													<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, dicit viderer evertitur</p>
+													<input type="radio" name="your_plan" value="Unlimited Plan" checked="">
+												</div>
+											</div>
+											<div class="plan-icon-text text-center">
+												<div class="plan-icon">
+													<i class="fas fa-cubes"></i>
+												</div>
+												<div class="plan-text">
+													<h3>Limited Plan</h3>
+													<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, dicit viderer evertitur</p>
+													<input type="radio" name="your_plan" value="Unlimited Plan">
+												</div>
+											</div>
+										</div>
+										<div class="budget-area">
+											<p>Optimization and Accessibility</p>
+											<div class="opti-list">
+												<ul class="d-flex">
+													<li class="bg-white active"><input type="checkbox" name="code_opti1" value="Semantic coding" checked>Semantic coding</li>
+													<li class="bg-white"><input type="checkbox" name="code_opti2" value="Mobile APP">Mobile APP</li>
+													<li class="bg-white"><input type="checkbox" name="code_opti3" value="Mobile Design">Mobile Design</li>
+												</ul>
+											</div>
+										</div>
+										<div class="comment-box">
+											<textarea name="extra-message" placeholder="Some Note"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.inner -->
+						<div class="actions">
+							<ul>
+								<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK </span></li>
+								<li><button type="submit" title="NEXT">SUBMIT <i class="fa fa-arrow-right"></i></button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="../../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/conditionize.flexible.jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/switch.js"></script>
+	<script src="assets/js/image-uploader.min.js"></script>
+
+	<script>
+		$(function () {
+	
+			$('.input-images-1').imageUploader();
+	
+			let preloaded = [
+			
+			];
+	
+			$('.input-images-2').imageUploader({
+				preloaded: preloaded,
+				imagesInputName: 'photos',
+				preloadedInputName: 'old'
+			});
+	
+			$('form').on('submit', function (event) {
+	
+				// Stop propagation
+				event.preventDefault();
+				event.stopPropagation();
+	
+				// Get some vars
+				let $form = $(this),
+					$modal = $('.modal');
+	
+				// Set name and description
+				$modal.find('#display-name span').text($form.find('input[id^="name"]').val());
+				$modal.find('#display-description span').text($form.find('input[id^="description"]').val());
+	
+				// Get the input file
+				let $inputImages = $form.find('input[name^="images"]');
+				if (!$inputImages.length) {
+					$inputImages = $form.find('input[name^="photos"]')
+				}
+	
+				// Get the new files names
+				let $fileNames = $('<ul>');
+				for (let file of $inputImages.prop('files')) {
+					$('<li>', {text: file.name}).appendTo($fileNames);
+				}
+	
+				// Set the new files names
+				$modal.find('#display-new-images').html($fileNames.html());
+	
+				// Get the preloaded inputs
+				let $inputPreloaded = $form.find('input[name^="old"]');
+				if ($inputPreloaded.length) {
+	
+					// Get the ids
+					let $preloadedIds = $('<ul>');
+					for (let iP of $inputPreloaded) {
+						$('<li>', {text: '#' + iP.value}).appendTo($preloadedIds);
+					}
+	
+					// Show the preloadede info and set the list of ids
+					$modal.find('#display-preloaded-images').show().html($preloadedIds.html());
+	
+				} else {
+	
+					// Hide the preloaded info
+					$modal.find('#display-preloaded-images').hide();
+	
+				}
+	
+				// Show the modal
+				$modal.css('visibility', 'visible');
+			});
+	
+			// Input and label handler
+			$('input').on('focus', function () {
+				$(this).parent().find('label').addClass('active')
+			}).on('blur', function () {
+				if ($(this).val() == '') {
+					$(this).parent().find('label').removeClass('active');
+				}
+			});
+	
+			// Sticky menu
+			let $nav = $('nav'),
+				$header = $('header'),
+				offset = 4 * parseFloat($('body').css('font-size')),
+				scrollTop = $(this).scrollTop();
+	
+			// Initial verification
+			setNav();
+	
+			// Bind scroll
+			$(window).on('scroll', function () {
+				scrollTop = $(this).scrollTop();
+				// Update nav
+				setNav();
+			});
+	
+			function setNav() {
+				if (scrollTop > $header.outerHeight()) {
+					$nav.css({position: 'fixed', 'top': offset});
+				} else {
+					$nav.css({position: '', 'top': ''});
+				}
+			}
+		});
+	
+		  $("#form-example-2 .uploaded-image").addClass('asdas');
+	</script>
+
+
+	<script>
+		$("#files").change(function() {
+			filename = this.files[0].name
+			// console.log(filename);
+		});
+
+		function UploadFile() {
+			var reader = new FileReader();
+			var file = document.getElementById('attach').files[0];
+			reader.onload = function() {
+				document.getElementById('fileContent').value = reader.result;
+				document.getElementById('filename').value = file.name;
+				document.getElementById('wizard').submit();
+			}
+			reader.readAsDataURL(file);
+		}
+
+		$(document).ready(function() {
+			$('.conditional').conditionize();
+		});
+	</script>
+</body>
+
+
+<!-- Mirrored from jthemes.net/themes/html/wizard-form/v1/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 May 2022 04:12:03 GMT -->
+</html>
