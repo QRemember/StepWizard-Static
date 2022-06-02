@@ -1,397 +1,774 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-	<meta charset="utf-8">
-	<title>Wizard V1</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/animate.min.css">
-	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lunar.css">
-	<link rel="stylesheet" href="assets/css/image-uploader.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wizard V1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lunar.css" />
+    <link rel="stylesheet" href="assets/css/image-uploader.min.css" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-	<link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
-	<!-- Color Alternatives -->
-	<link href="assets/css/colors/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
-	<link href="assets/css/colors/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
-	<link href="assets/css/colors/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
-	<link href="assets/css/colors/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/colors/switch.css"
+    />
+    <!-- Color Alternatives -->
+    <link
+      href="assets/css/colors/color-2.css"
+      rel="alternate stylesheet"
+      type="text/css"
+      title="color-2"
+    />
+    <link
+      href="assets/css/colors/color-3.css"
+      rel="alternate stylesheet"
+      type="text/css"
+      title="color-3"
+    />
+    <link
+      href="assets/css/colors/color-4.css"
+      rel="alternate stylesheet"
+      type="text/css"
+      title="color-4"
+    />
+    <link
+      href="assets/css/colors/color-5.css"
+      rel="alternate stylesheet"
+      type="text/css"
+      title="color-5"
+    />
 
-<body>
+    <style>
+      header.row{
+          height: initial !important;
+          background: unset;
+      }
+      .navbar {
+  background: black;
+}
+  </style>
+  </head>
 
+  <body>
+    <div id="wrapper">
+      <header class="row" id="header">
 
-
-
-
-<div id="wrapper">
-
-
-
-
-   <!-- contents -->
-   <div class="main_content">
-
+        <div class="main_nav">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img class="no-stick" src="https://theme.zdassets.com/theme_assets/9836900/a7754aaaf2226d925658446d5385b6d35908bbe3.png">
+              <img class="stick" src="/assets/img/logoblack.png">
+              </a>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Create A Memorial</a>
+                  </li>
+              
+                </ul>
+            
+              </div>
+            </div>
+        
+            </nav>
+        </div>
+    
+        </header>
+      <!-- contents -->
+      <div class="main_content mb-5">
         <!-- header -->
 
-
         <div class="container">
+          <div id="spinneroverlay"></div>
 
-            <div id="spinneroverlay"> </div>
+          <div class="profile">
+            <div class="profile-cover">
+              <!-- profile cover -->
+              <img src="assets/img/avatars/profile-cover.jpg" alt="" />
 
-
-            <div class="profile">
-                <div class="profile-cover">
-
-                    <!-- profile cover -->
-                    <img src="assets/img/avatars/profile-cover.jpg" alt="">
-
-                    <a href="#"> <i class="uil-camera"></i> Edit </a>
-
-                </div>
-
-                <div class="profile-details">
-                    <div class="profile-image">
-                        <img src="assets/img/avatars/avatar-2.jpg" alt="">
-                        <a href="#"> </a>
-                    </div>
-                    <div class="profile-details-info">
-                        <h1> Josephine Williams </h1>
-                        <p> 1st May 1968 - 1st October 2017</p>
-                        <h3>In Loving Memory</h3>
-                        <p class="profile-memory">
-                            On Saturday, May 28th, 2022, Adrianus (Ed) Lugtenburg was called home at the age of 83. After several months of declining health, Adrianus died peacefully at home in Whitby, Ontario with his beloved wife Margaret, their children, and family by his side.
-Adrianus was born in Spijkenisse, Netherlands, on January 6th, 1939. He relocated to Canada as a teenager with his father and mother and 4 younger brothers.
-
-                        </p>
-                    </div>
-
-                </div>
-
-
-       
-
+              <a href="#"> <i class="uil-camera"></i> Edit </a>
             </div>
 
+            <div class="profile-details">
+              <div class="profile-image">
+                <img src="assets/img/avatars/avatar-2.jpg" alt="" />
+                <a href="#"> </a>
+              </div>
+              <div class="profile-details-info">
+                <h1>Josephine Williams</h1>
+                <p>1st May 1968 - 1st October 2017</p>
+                <h3>In Loving Memory</h3>
+                <p class="profile-memory">
+                  On Saturday, May 28th, 2022, Adrianus (Ed) Lugtenburg was
+                  called home at the age of 83. After several months of
+                  declining health, Adrianus died peacefully at home in Whitby,
+                  Ontario with his beloved wife Margaret, their children, and
+                  family by his side. Adrianus was born in Spijkenisse,
+                  Netherlands, on January 6th, 1939. He relocated to Canada as a
+                  teenager with his father and mother and 4 younger brothers.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <ul class="nav nav-pills mb-3 d-flex align-items-center justify-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="pills-home-tab"
+                data-toggle="pill"
+                href="#pills-home"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+                >All</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-profile-tab"
+                data-toggle="pill"
+                href="#pills-profile"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                >Images</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-contact-tab"
+                data-toggle="pill"
+                href="#pills-contact"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >Stories</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="profile-memory-images">
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita1
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita2
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade only_images"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="profile-memory-images">
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+            
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+               
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+              
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+              
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+             
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+            
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+              
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+               
+                </div>
+                <div class="image_item">
+                  <img
+                    src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg"
+                  />
+          
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane only_stories fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
             <div class="profile-memory-images">
                 <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                <div class="image_caption">
-                    <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita 
+                    </p>
                     <h3>~John</h3>
-                </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-                <div class="image_item">
-                    <img src="http://demo.holathemes.com/simplest-html/assets/images/post/img-4.jpg">
-                    <div class="image_caption">
-                        <p>I somehow had these on our computer... Gems! I love our Tatita <3</p>
-                        <h3>~John</h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-    </div>
-
-
-
-</div>
-
-
-<div class="modal fade   "  id="demoModal"  tabindex="-1" role="dialog"
-     aria-labelledby="demoModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered  modal-lg  " role="document">
-        <div class="modal-content">
-
-            <div class="container-fluid">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="row">
-       
-
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="d-flex"> 
-                            <div class="col-md-6 bg-img rounded-left m-h-80 d-none d-sm-block" style="background-image: url('https://images.unsplash.com/photo-1538943963832-856b555cd29b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')">
-        
-                            </div>
-                            <div class="col-md-6 py-5 px-sm-5 my-auto " style="margin-top:initial !important">
-        
-                                <h2 class="pt-sm-3">
-                                    <img src="assets/img/avatars/avatar-2.jpg" class="modal-avatar" alt="">
-                                    Memories Editor1</h2>
-                                <p class="text-muted">
-                                    Louise and her doll (as big as her) Amber. I still remember their performances, she did for us. She would practise for hours before showing us, it was adorable to watch.
-        
-                                </p>
-                      
-                            </div>
-                        </div>
-
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="d-flex"> 
-                            <div class="col-md-6 bg-img rounded-left m-h-80 d-none d-sm-block" style="background-image: url('https://images.unsplash.com/photo-1538943963832-856b555cd29b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')">
-        
-                            </div>
-                            <div class="col-md-6 py-5 px-sm-5 my-auto " style="margin-top:initial !important">
-        
-                                <h2 class="pt-sm-3">
-                                    <img src="assets/img/avatars/avatar-2.jpg" class="modal-avatar" alt="">
-                                    Memories Editor2</h2>
-                                <p class="text-muted">
-                                    Louise and her doll (as big as her) Amber. I still remember their performances, she did for us. She would practise for hours before showing us, it was adorable to watch.
-        
-                                </p>
-                      
-                            </div>
-                        </div>
-
-                      </div>
-                     
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                   </div>
-
-
-
                 </div>
+                <div class="image_item">
+               
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                 
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                 
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+                <div class="image_item">
+                
+                  <div class="image_caption">
+                    <p>
+                      I somehow had these on our computer... Gems! I love our
+                      Tatita
+                    </p>
+                    <h3>~John</h3>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h3>GETTING STARTED</h3>
+              <ul>
+                <li>
+                  <a>Schedule an Event Consultation</a>
+                </li>
+                <li>
+                  <a>Create a Memorial Page</a>
+                </li>
+                <li>
+                  <a>Browse Memorials</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3>ABOUT</h3>
+              <ul>
+                <li>
+                  <a>Our Story</a>
+                </li>
+                <li>
+                  <a>Press & Reviews</a>
+                </li>
+                <li>
+                  <a>What We Do</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3>HELP</h3>
+              <ul>
+                <li>
+                  <a>Resources</a>
+                </li>
+                <li>
+                  <a>FAQs</a>
+                </li>
+                <li>
+                  <a>Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3>LEGAL</h3>
+              <ul>
+                <li>
+                  <a>Terms & Conditions</a>
+                </li>
+                <li>
+                  <a>Privacy</a>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+          <div class="footer_imageicons">
+            <img src="https://theme.zdassets.com/theme_assets/9836900/a7754aaaf2226d925658446d5385b6d35908bbe3.png">
+            <div class="footer_icons">
+              <i class="fab fa-2x fa-facebook-f mr-2"></i>
+              <i class="fab fa-2x fa-instagram mr-2"></i>
+              <i class="fab fa-2x fa-twitter"></i>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p>COPYRIGHT 2022 QREMEMBER</p>
+          </div>
+        </div>
+      </footer>
     </div>
-</div>
 
+    <div
+      class="modal fade"
+      id="demoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="demoModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="d-flex">
+                      <div
+                        class="col-md-6 bg-img rounded-left m-h-80 d-none d-sm-block"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1538943963832-856b555cd29b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+                        "
+                      ></div>
+                      <div
+                        class="col-md-6 py-5 px-sm-5 my-auto"
+                        style="margin-top: initial !important"
+                      >
+                        <h2 class="pt-sm-3">
+                          <img
+                            src="assets/img/avatars/avatar-2.jpg"
+                            class="modal-avatar"
+                            alt=""
+                          />
+                          Memories Editor1
+                        </h2>
+                        <p class="text-muted">
+                          Louise and her doll (as big as her) Amber. I still
+                          remember their performances, she did for us. She would
+                          practise for hours before showing us, it was adorable
+                          to watch.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="d-flex">
+                      <div
+                        class="col-md-6 bg-img rounded-left m-h-80 d-none d-sm-block"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1538943963832-856b555cd29b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+                        "
+                      ></div>
+                      <div
+                        class="col-md-6 py-5 px-sm-5 my-auto"
+                        style="margin-top: initial !important"
+                      >
+                        <h2 class="pt-sm-3">
+                          <img
+                            src="assets/img/avatars/avatar-2.jpg"
+                            class="modal-avatar"
+                            alt=""
+                          />
+                          Memories Editor2
+                        </h2>
+                        <p class="text-muted">
+                          Louise and her doll (as big as her) Amber. I still
+                          remember their performances, she did for us. She would
+                          practise for hours before showing us, it was adorable
+                          to watch.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="../../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/conditionize.flexible.jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/switch.js"></script>
+    <script src="assets/js/lunar.js"></script>
+    <script src="assets/js/image-uploader.min.js"></script>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="../../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/conditionize.flexible.jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/switch.js"></script>
-<script src="assets/js/lunar.js"></script>
-<script src="assets/js/image-uploader.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
+    <script>
+      $(function () {
+        $(".input-images-1").imageUploader();
 
-<script>
-    $(function () {
+        let preloaded = [];
 
-        $('.input-images-1').imageUploader();
-
-        let preloaded = [
-        
-        ];
-
-        $('.input-images-2').imageUploader({
-            preloaded: preloaded,
-            imagesInputName: 'photos',
-            preloadedInputName: 'old'
+        $(".input-images-2").imageUploader({
+          preloaded: preloaded,
+          imagesInputName: "photos",
+          preloadedInputName: "old",
         });
 
-        $('form').on('submit', function (event) {
+        $("form").on("submit", function (event) {
+          // Stop propagation
+          event.preventDefault();
+          event.stopPropagation();
 
-            // Stop propagation
-            event.preventDefault();
-            event.stopPropagation();
+          // Get some vars
+          let $form = $(this),
+            $modal = $(".modal");
 
-            // Get some vars
-            let $form = $(this),
-                $modal = $('.modal');
+          // Set name and description
+          $modal
+            .find("#display-name span")
+            .text($form.find('input[id^="name"]').val());
+          $modal
+            .find("#display-description span")
+            .text($form.find('input[id^="description"]').val());
 
-            // Set name and description
-            $modal.find('#display-name span').text($form.find('input[id^="name"]').val());
-            $modal.find('#display-description span').text($form.find('input[id^="description"]').val());
+          // Get the input file
+          let $inputImages = $form.find('input[name^="images"]');
+          if (!$inputImages.length) {
+            $inputImages = $form.find('input[name^="photos"]');
+          }
 
-            // Get the input file
-            let $inputImages = $form.find('input[name^="images"]');
-            if (!$inputImages.length) {
-                $inputImages = $form.find('input[name^="photos"]')
+          // Get the new files names
+          let $fileNames = $("<ul>");
+          for (let file of $inputImages.prop("files")) {
+            $("<li>", { text: file.name }).appendTo($fileNames);
+          }
+
+          // Set the new files names
+          $modal.find("#display-new-images").html($fileNames.html());
+
+          // Get the preloaded inputs
+          let $inputPreloaded = $form.find('input[name^="old"]');
+          if ($inputPreloaded.length) {
+            // Get the ids
+            let $preloadedIds = $("<ul>");
+            for (let iP of $inputPreloaded) {
+              $("<li>", { text: "#" + iP.value }).appendTo($preloadedIds);
             }
 
-            // Get the new files names
-            let $fileNames = $('<ul>');
-            for (let file of $inputImages.prop('files')) {
-                $('<li>', {text: file.name}).appendTo($fileNames);
-            }
+            // Show the preloadede info and set the list of ids
+            $modal
+              .find("#display-preloaded-images")
+              .show()
+              .html($preloadedIds.html());
+          } else {
+            // Hide the preloaded info
+            $modal.find("#display-preloaded-images").hide();
+          }
 
-            // Set the new files names
-            $modal.find('#display-new-images').html($fileNames.html());
-
-            // Get the preloaded inputs
-            let $inputPreloaded = $form.find('input[name^="old"]');
-            if ($inputPreloaded.length) {
-
-                // Get the ids
-                let $preloadedIds = $('<ul>');
-                for (let iP of $inputPreloaded) {
-                    $('<li>', {text: '#' + iP.value}).appendTo($preloadedIds);
-                }
-
-                // Show the preloadede info and set the list of ids
-                $modal.find('#display-preloaded-images').show().html($preloadedIds.html());
-
-            } else {
-
-                // Hide the preloaded info
-                $modal.find('#display-preloaded-images').hide();
-
-            }
-
-            // Show the modal
-            $modal.css('visibility', 'visible');
+          // Show the modal
+          $modal.css("visibility", "visible");
         });
 
         // Input and label handler
-        $('input').on('focus', function () {
-            $(this).parent().find('label').addClass('active')
-        }).on('blur', function () {
-            if ($(this).val() == '') {
-                $(this).parent().find('label').removeClass('active');
+        $("input")
+          .on("focus", function () {
+            $(this).parent().find("label").addClass("active");
+          })
+          .on("blur", function () {
+            if ($(this).val() == "") {
+              $(this).parent().find("label").removeClass("active");
             }
-        });
+          });
 
         // Sticky menu
-        let $nav = $('nav'),
-            $header = $('header'),
-            offset = 4 * parseFloat($('body').css('font-size')),
-            scrollTop = $(this).scrollTop();
+        let $nav = $("nav"),
+          $header = $("header"),
+          offset = 4 * parseFloat($("body").css("font-size")),
+          scrollTop = $(this).scrollTop();
 
         // Initial verification
         setNav();
 
         // Bind scroll
-        $(window).on('scroll', function () {
-            scrollTop = $(this).scrollTop();
-            // Update nav
-            setNav();
+        $(window).on("scroll", function () {
+          scrollTop = $(this).scrollTop();
+          // Update nav
+          setNav();
         });
 
         function setNav() {
-            if (scrollTop > $header.outerHeight()) {
-                $nav.css({position: 'fixed', 'top': offset});
-            } else {
-                $nav.css({position: '', 'top': ''});
-            }
+          if (scrollTop > $header.outerHeight()) {
+            $nav.css({ position: "fixed", top: offset });
+          } else {
+            $nav.css({ position: "", top: "" });
+          }
         }
-    });
+      });
 
-      $("#form-example-2 .uploaded-image").addClass('asdas');
-</script>
+      $("#form-example-2 .uploaded-image").addClass("asdas");
+    </script>
 
-
-<script>
-    $("#files").change(function() {
-        filename = this.files[0].name
+    <script>
+      $("#files").change(function () {
+        filename = this.files[0].name;
         // console.log(filename);
-    });
+      });
 
-    function UploadFile() {
+      function UploadFile() {
         var reader = new FileReader();
-        var file = document.getElementById('attach').files[0];
-        reader.onload = function() {
-            document.getElementById('fileContent').value = reader.result;
-            document.getElementById('filename').value = file.name;
-            document.getElementById('wizard').submit();
-        }
+        var file = document.getElementById("attach").files[0];
+        reader.onload = function () {
+          document.getElementById("fileContent").value = reader.result;
+          document.getElementById("filename").value = file.name;
+          document.getElementById("wizard").submit();
+        };
         reader.readAsDataURL(file);
-    }
+      }
 
-    $(document).ready(function() {
-        $('.conditional').conditionize();
-    });
-</script>
+      $(document).ready(function () {
+        $(".conditional").conditionize();
+      });
+    </script>
 
-<script>
-  $('.image_item').click(function(){
-      $('#demoModal').modal('show');
-      $('#demoModal').addClass('index');
-  })
-</script>
-
-
-
-
-</body>
-
-
+    <script>
+      $(".image_item").click(function () {
+        $("#demoModal").modal("show");
+        $("#demoModal").addClass("index");
+      });
+    </script>
+  </body>
 </html>

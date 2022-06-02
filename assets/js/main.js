@@ -22,6 +22,15 @@ $(function() {
         format: "dd/mm/yyyy"
     });
 
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 99) {
+          $(".navbar ").addClass("is-scrolling");
+        } else {
+          $(".navbar ").removeClass("is-scrolling");
+        }
+      });
+
 
     $(".step-box-content ").on('click', function() {
 
