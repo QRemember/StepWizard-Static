@@ -3042,7 +3042,7 @@ min-height: initial !important;
 
 @media(max-width:767px) {
   .top-banner p {
-      font-size: 16px;
+    font-size: 15px;
       line-height: 24px;
       margin-bottom: 25px
   }
@@ -3495,9 +3495,7 @@ footer .col-lg-3:not(:last-child){
   padding: 0;
 }
 }
-.container{
-  padding: 0;
-}
+
 
 .profile {
   margin-top: -0.625pc;
@@ -3524,5 +3522,16 @@ footer .col-lg-3:not(:last-child){
     grid-template-columns: repeat(1,1fr);
     grid-gap: 30px;
     margin-top: 30px;
+}
+}
+
+@media (max-width: 600px){
+.top-banner h2 {
+  font-size: 28px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.btn-group-lg>.btn, .btn-lg {
+  font-size: 1.05rem;
 }
 }
