@@ -284,6 +284,19 @@
 			$('.conditional').conditionize();
 		});
 	</script>
+
+	<script>
+		    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 99) {
+          $(".navbar ").addClass("is-scrolling");
+        } else {
+          $(".navbar ").removeClass("is-scrolling");
+        }
+      });
+	</script>
+
+
 </body>
 
 
