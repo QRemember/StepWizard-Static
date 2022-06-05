@@ -3750,13 +3750,13 @@ z-index: 999 !important;
 }
 
 .profile-image{
-  margin-right: 50px;
   margin-left: 50px;
 }
 
 .profile-image img{
   width: 200px !important;
   height: 200px !important;
+  margin-right: 20px;
 }
 
 .profile-details-info{
@@ -3867,8 +3867,8 @@ z-index: 999 !important;
 }
 
 .profile-image img {
-  width: 150px !important;
-  height: 150px !important;
+  width: 100px !important;
+  height: 100px !important;
 }
 .profile {
   margin-top: -0.625pc;
@@ -3898,5 +3898,29 @@ z-index: 999 !important;
 }
 .connection_list p{
   font-size: 10px !important;
+}
+}
+
+@media(max-width:600px){
+  .d-mb-block{
+    display: block !important;
+  }
+}
+
+.d-mb-none{
+  display: none;
+}
+
+.mobile-profile-detail h1{
+  margin-top: 0 !important;
+}
+
+.mobile-profile-detail p{
+  margin-top: 10px !important;
+}
+
+@media (max-width: 600px){
+.d-sm-none {
+    display: none!important;
 }
 }
