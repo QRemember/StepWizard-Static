@@ -1450,7 +1450,7 @@ header {
 }
 
 header p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
   font-weight: 200;
   margin-bottom: 4rem;
@@ -1486,7 +1486,7 @@ a {
 h1,
 h4,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
@@ -1563,7 +1563,7 @@ strong {
 form > button {
   -webkit-appearance: none;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   padding: 1rem 2rem;
   border: none;
@@ -1654,7 +1654,7 @@ input:focus + label {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -1923,7 +1923,7 @@ border-radius: 999px;
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.8);
   top: 0;
   left: 0%;
 }
@@ -2449,10 +2449,12 @@ min-height: initial !important;
 }
 
 .profile-details .profile-details-info h1 {
-  font-size: 35px;
-    margin: 0;
-    margin-top: 30px;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 30px;
 }
+   
+
 
 [class~=nav-profile] [class~=nav-btn-more] {
     position: relative;
@@ -2517,7 +2519,7 @@ min-height: initial !important;
 }
 
 .profile-details-info p:nth-child(2), .profile-details-info h3{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .profile-details-info h3{
@@ -2525,7 +2527,7 @@ min-height: initial !important;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
-  margin-top: 14px;
+  margin-top: 22px;
 }
 
 .profile-memory-images{
@@ -2544,7 +2546,7 @@ min-height: initial !important;
 
 .image_item{
   position: relative;
-  border-radius: 20px;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -2566,7 +2568,7 @@ min-height: initial !important;
 }
 
 .profile-details{
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 .image_caption{
@@ -3002,8 +3004,8 @@ min-height: initial !important;
 
 .top-banner h2 {
   margin: 0 0 20px;
-  font: 600 55px/1 "Poppins", sans-serif;
-  letter-spacing: -3px
+  font: 600 40px/1 "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
 @media(max-width:1199px) {
@@ -3028,7 +3030,7 @@ min-height: initial !important;
 .top-banner p {
   max-width: 780px;
   margin: 0 auto 40px;
-  font: 300 23px/41px "Poppins", sans-serif;
+  font: 300 20px/41px "Poppins", sans-serif;
   letter-spacing: -.2px
 }
 
@@ -3382,6 +3384,7 @@ background: unset;
 .nav-pills .nav-link {
   font-size: 16px;
   color: var(--gray);
+  padding-left: 46px;
 }
 
 .story_part textarea{
@@ -3397,8 +3400,6 @@ background: unset;
 footer{
   background-color: var(--gray);
   color: rgb(255, 255, 255);
-  padding-top: 60px;
-
   margin: 0;
 }
 
@@ -3414,7 +3415,6 @@ footer ul li:not(:last-child){
 
 .footer_imageicons{
   text-align: center;
-  margin-top: 20px;
   padding-bottom: 60px;
 }
 
@@ -3426,7 +3426,8 @@ footer ul li:not(:last-child){
 
 .footer_copyright{
   border-top: 1px solid #d3d3d31f;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .navbar.is-scrolling {
@@ -3505,7 +3506,7 @@ footer .col-lg-3:not(:last-child){
 
 .profile {
   margin-top: -0.625pc;
-  margin-top: 98px;
+  padding-top: 247px;
 }
 
 .nav-pills{
@@ -3526,18 +3527,18 @@ footer .col-lg-3:not(:last-child){
   .profile-memory-images {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 1px;
+    grid-gap: 4px;
     margin-top: 30px;
 }
 
 .image_caption p {
-  font-weight: 600;
-  color: black;
   padding: 0 13px;
-  font-size: 10px !important;
+  font-size: 8px !important;
   font-weight: 500;
   padding-left: 6px;
   padding-right: 6px;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 .image_caption .align-items-center{
@@ -3554,7 +3555,7 @@ footer .col-lg-3:not(:last-child){
 
 .profile-memory-images img {
   width: 100%;
-  height: 120px;
+  height: 90px;
   object-fit: cover;
 }
 
@@ -3573,7 +3574,6 @@ p, a{
 
 .profile-details .profile-details-info p {
   font-size: 13px;
-  padding: 0 20px;
   font-size: 12px !important;
 }
 
@@ -3661,4 +3661,238 @@ z-index: 999 !important;
 .navbar-light .navbar-toggler-icon {
   background-image: url(../img/burger.png);
   height: 18px;
+}
+
+.steps-area .image-holder::after {
+  position: absolute;
+  content: '';
+  background: url(/assets/img/logowhite.png);
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.how_it_works{
+  padding: 50px 0;
+}
+
+.how_it_works h3{
+  text-align: center;
+  font-weight: 500;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.how_it_works p{
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+}
+
+.how_it_works p span{
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.left_step h4{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left_step ul li{
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.left_step ul{
+  margin-left: 1em;
+}
+
+.mt-50{
+  margin-top: 50px !important;
+}
+
+.how_it_works .right_step img{
+  height: 500px;
+  width: 100%;
+}
+
+.how_it_works{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.how_it_works a{
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  width: fit-content;
+  color: white;
+  margin-top: 20px !important;
+  font-size: 15px;
+}
+
+.profile-cover{
+  display: none !important;
+}
+
+.profile-details{
+  display: flex;
+  padding-left: 40px;
+}
+
+.profile-image{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.profile-image img{
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.profile-details-info{
+  text-align: left;
+  padding-left: 75px;
+}
+
+.connection_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connection_list .card-avatar{
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.nav-pills img{
+  width: 10px;
+}
+
+
+@media(min-width:992px){
+
+.nav-pills .nav-item:first-child .active{
+  position: relative;
+  padding-left: 69px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.nav-pills .nav-item:first-child .active::before{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../img/grid.png);
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+}
+
+.nav-pills .nav-item:nth-child(2) .active{
+  position: relative;
+  padding-left: 80px;
+  padding-right: 52px;
+  margin-left: 25px;
+}
+
+.nav-pills .nav-item:nth-child(2) .active::before{
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url(../img/img.png);
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 46px;
+
+}
+
+.nav-pills .nav-item:nth-child(3) .active{
+  position: relative;
+  padding-left: 80px;
+  padding-right: 52px;
+  margin-left: 30px;
+}
+
+.nav-pills .nav-item:nth-child(3) .active::before{
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url(../img/romantic-novel.png);
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 46px;
+
+}
+}
+
+@media(max-width:992px){
+  .profile-details {
+    display: flex;
+    padding-left: initial; 
+    flex-direction: column;
+    align-items: start;
+}
+.profile-image {
+  margin-left: initial; 
+}
+.profile-details-info {
+  padding-left: initial; 
+}
+.connection_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.profile-image img {
+  width: 150px !important;
+  height: 150px !important;
+}
+.profile {
+  margin-top: -0.625pc;
+  padding-top: 154px;
+}
+.timeline .container{
+  padding: 0;
+}
+.nav-pills .nav-link {
+  padding-left: 1rem;
+}
+}
+
+@media(max-width:600px){
+  .nav-pills{
+    margin-left: initial;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+  }
+  .connection_list .card-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 5px;
+}
+.navbar {
+  box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
+}
+.connection_list p{
+  font-size: 10px !important;
+}
 }

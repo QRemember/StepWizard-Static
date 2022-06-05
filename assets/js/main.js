@@ -27,7 +27,7 @@ $(function() {
         if (scroll >= 99) {
           $(".navbar ").addClass("is-scrolling");
         } else {
-          $(".navbar ").removeClass("is-scrolling");
+          $(".navbar ").removeClass("is-scrolling"); 
         }
       });
 
