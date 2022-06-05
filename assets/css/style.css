@@ -3555,7 +3555,7 @@ footer .col-lg-3:not(:last-child){
 
 .profile-memory-images img {
   width: 100%;
-  height: 90px;
+  height:110px;
   object-fit: cover;
 }
 
@@ -3863,7 +3863,7 @@ z-index: 999 !important;
   gap: 20px;
 }
 .connection_list .text-center{
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .profile-image img {
@@ -3887,7 +3887,17 @@ z-index: 999 !important;
     margin-left: initial;
     justify-content: space-between;
     margin-bottom: 0 !important;
+    padding:  0 15px;
   }
+
+  .connection_list{
+    padding: 0 15px;
+  }
+
+  .connection_container{
+    width: 100%;
+  }
+
   .connection_list .card-avatar {
     width: 50px !important;
     height: 50px !important;
@@ -3922,5 +3932,8 @@ z-index: 999 !important;
 @media (max-width: 600px){
 .d-sm-none {
     display: none!important;
+}.top-banner {
+  position: absolute;
+  top: 56%;
 }
 }
