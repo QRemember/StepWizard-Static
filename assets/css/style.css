@@ -3198,7 +3198,7 @@ header.video-bg {
     width: 100%;
   }
   .steps-area .steps {
-    top: 20%;
+    top: 23%;
 }
 .multisteps-form__progress{
   margin: 0;
@@ -3666,7 +3666,7 @@ z-index: 999 !important;
 .steps-area .image-holder::after {
   position: absolute;
   content: '';
-  background: url(../assets/img/logowhite.png);
+  background: url(../img/logowhite.png);
   left: 0;
   top: 0;
   width: 180px;
