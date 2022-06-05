@@ -3666,7 +3666,7 @@ z-index: 999 !important;
 .steps-area .image-holder::after {
   position: absolute;
   content: '';
-  background: url(/assets/img/logowhite.png);
+  background: url(../assets/img/logowhite.png);
   left: 0;
   top: 0;
   width: 180px;
@@ -3862,6 +3862,10 @@ z-index: 999 !important;
   overflow-x: scroll;
   gap: 20px;
 }
+.connection_list .text-center{
+  margin-right: 10px;
+}
+
 .profile-image img {
   width: 150px !important;
   height: 150px !important;
