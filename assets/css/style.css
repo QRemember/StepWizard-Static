@@ -3942,4 +3942,7 @@ z-index: 999 !important;
 .left_step h4 {
   margin: 2rem 0;
 }
+.navbar-brand img {
+  margin-left: -10px;
+}
 }
