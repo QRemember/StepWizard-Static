@@ -3936,4 +3936,10 @@ z-index: 999 !important;
   position: absolute;
   top: 56%;
 }
+.how_it_works{
+  padding-top: 0;
+}
+.left_step h4 {
+  margin: 2rem 0;
+}
 }
