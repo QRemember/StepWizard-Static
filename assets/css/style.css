@@ -3479,6 +3479,8 @@ footer ul li:not(:last-child){
   border-color: var(--gray);
   border-radius: 999px;
   padding: 0.5rem 2rem;
+  font-size: 15px;
+  text-transform: capitalize;
 }
 
 @media(max-width:992px){
@@ -3944,5 +3946,50 @@ z-index: 999 !important;
 }
 .navbar-brand img {
   margin-left: -10px;
+}
+}
+
+.register_container{
+  background: url(../img/banner.jpg) no-repeat scroll center bottom;
+  background-size: cover;
+  padding-top: 0;
+  display: block;
+  padding-bottom: 100px;
+}
+
+.w-200{
+  width: 200px;
+  padding-top: 60px;
+}
+
+.register_form{
+  margin: auto;
+}
+
+.register_form form{
+  background: white;
+    padding:50px 50px;
+    border-radius: 20px;
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.register_form form input{
+  border: 1px solid lightgray;
+  border-bottom: none;
+  width: 96%;
+}
+
+@media(max-width:600px){
+  .register_container .container{
+    width: 100%;
+    padding: 0;
+  }
+
+  .register_form form {
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
 }
 }
